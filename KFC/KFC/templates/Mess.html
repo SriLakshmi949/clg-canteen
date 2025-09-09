@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mess Menu</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="Mess menu">
+
+<nav>
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="{{ url_for('Mess') }}">Mess Menu</a>
+  <a href="{{ url_for('kfc_canteen') }}">Canteen</a>
+  <a href="{{ url_for('order') }}">Order</a>
+</nav>
+
+<header>
+  <h1>Mess Menu</h1>
+</header>
+
+<div class="container">
+  <a href="{{ url_for('Mess_breakfast') }}" class="btn">🍳 Breakfast</a>
+  <a href="{{ url_for('Mess_lunch') }}" class="btn">🍗 Lunch</a>
+  <a href="{{ url_for('Mess_snacks') }}" class="btn">🥪 Snacks</a>
+  <a href="{{ url_for('Mess_dinner') }}" class="btn">🍲 dinner</a>

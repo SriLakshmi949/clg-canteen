@@ -1,0 +1,250 @@
+/* ===========================
+   Global Styling
+=========================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background 0.5s ease-in-out;
+}
+
+/* ===========================
+   Backgrounds for Each Page
+=========================== */
+body.home {
+    background-image: url("https://images.adsttc.com/media/images/50aa/e6ca/b3fc/4b0b/5400/0072/large_jpg/RocheCanteen-18.jpg?1414175916");
+}
+
+body.Mess {
+    background-image: url("https://www.creativefabrica.com/wp-content/uploads/2024/03/14/Blank-restaurant-menu-card-Graphics-93227858-1.jpg");
+}
+
+body.Mess-breakfast {
+    background-image: url("https://vegplatter.in/files/public/inline-images/bg_12.jpg");
+}
+body.Mess-lunch {
+    background-image: url("https://img.freepik.com/premium-photo/indian-ethnic-food-buffet-vibrant-diverse-spread_29977-10798.jpg");
+}
+body.Mess-snacks {
+    background-image: url("https://img.freepik.com/free-photo/top-view-different-eatings-crackers-fruits-candies_140725-57484.jpg");
+}
+body.Mess-dinner {
+    background-image: url("https://img.freepik.com/free-photo/delicious-roti-arrangement-table-with-copy-space_23-2149033994.jpg?size=626&ext=jpg");
+}
+
+body.kfc-canteen {
+    background-image: url("https://thumbs.dreamstime.com/z/modern-interior-cafeteria-canteen-chairs-tables-generative-ai-modern-interior-cafeteria-canteen-chairs-279101650.jpg");
+}
+
+body.kfc-canteen-snacks {
+    background-image: url("https://img.freepik.com/premium-photo/wooden-board-with-delicious-samosas-table_144356-106428.jpg");
+}
+
+body.kfc-canteen-Fastfood {
+    background-image: url("https://as2.ftcdn.net/v2/jpg/08/14/72/65/1000_F_814726552_r1WqsySscfvOSnVYz7XuM3gaqSmH0eHb.jpg");
+}
+body.kfc-canteen-Beverages {
+    background-image: url("https://thumbs.dreamstime.com/b/cold-drink-wooden-table-summer-landscape-beach-palms-ocean-cold-drink-wooden-table-summer-landscape-beach-293544412.jpg");
+}
+
+body.order {
+    background-image: url("https://realfood.tesco.com/media/images/RFO-1400x919-VanillaCupcakes-0c7dfdf5-87ce-44f4-8180-cfe8c8140260-0-1400x919.jpg");
+}
+
+body.login {
+    background-image: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+}
+
+body.about {
+    background-image: url("https://media.istockphoto.com/photos/about-us-text-on-wooden-picture-id487018282?k=20&m=487018282&s=612x612&w=0&h=z7NPzAwn1uKNUCHKN9HJHgX0sBB7tTNwnWj_nxCFesI=");
+}
+
+body.contact {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/007/067/600/small_2x/contact-us-businessman-hand-pressing-icon-phone-mail-address-free-photo.jpg");
+}
+
+/* ===========================
+   Navbar
+=========================== */
+nav {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    border-radius: 8px;
+    margin: 10px auto;
+    max-width: 95%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* ===========================
+   Header
+=========================== */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* ===========================
+   Container
+=========================== */
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+button, .btn {
+    background: #ffcc00;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background: #ff9900;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   Menu Cards
+=========================== */
+.card {
+    background: white;
+    color: black;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    display: inline-block;
+    width: 220px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* ===========================
+   Forms (Login, Signup, Order)
+=========================== */
+form {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 25px;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: 400px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #ff9900;
+    transform: scale(1.03);
+}
+
+/* ===========================
+   Success Message
+=========================== */
+.success-message {
+    background: rgba(0, 128, 0, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+}

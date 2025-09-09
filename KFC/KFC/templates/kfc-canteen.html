@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canteen</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="kfc-canteen">
+
+<nav>
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="{{ url_for('Mess') }}">Mess Menu</a>
+  <a href="{{ url_for('kfc_canteen') }}">Canteen</a>
+</nav>
+
+<header>
+  <h1>KFC Canteen Menu</h1>
+</header>
+
+<div class="container">
+  <a href="{{ url_for('kfc_canteen_snacks') }}" class="btn">🍫 Snacks</a>
+  <a href="{{ url_for('kfc_canteen_Fastfood') }}" class="btn">🍖 Fastfood</a>
+  <a href="{{ url_for('kfc_canteen_beverages') }}" class="btn">🥤 Beverages</a>
+</div>
+
+</body>
+</html>

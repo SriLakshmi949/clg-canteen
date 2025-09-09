@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Order</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="order">
+
+<!-- Navbar -->
+<nav>
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="{{ url_for('kfc_canteen') }}">Canteen</a>
+  <a href="{{ url_for('Mess') }}">Mess Menu</a>
+</nav>
+
+<header>
+  <h1>🎂 Cake Order</h1>
+</header>
+
+<div class="container">
+ <form action="{{ url_for('order') }}" method="POST" class="cake-form"> 
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="10-digit number" pattern="[0-9]{10}" required>
+
+    <label for="flavour">Cake Flavour:</label>
+    <select id="flavour" name="flavour" required>
+      <option value="">-- Select Flavour --</option>
+      <option>Chocolate</option>
+      <option>Vanilla</option>
+      <option>Black Forest</option>
+      <option>Butterscotch</option>
+      <option>Red Velvet</option>
+    </select>
+
+    <label for="quality">Cake Quality:</label>
+    <select id="quality" name="quality" required>
+      <option value="">-- Select Quality --</option>
+      <option>Regular</option>
+      <option>Premium</option>
+      <option>Deluxe</option>
+    </select>
+
+    <label for="amount">Amount (₹):</label>
+    <input type="number" id="amount" name="amount" min="200" placeholder="Enter amount" required>
+
+    <label for="date">Pickup / Delivery Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Pickup / Delivery Time:</label>
+    <input type="time" id="time" name="time" required>
+
+    <button type="submit">✅ Place Order</button>
+  </form>
+</div>
+
+</body>
+</html>

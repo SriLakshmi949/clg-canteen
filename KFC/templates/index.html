@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canteen Project</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="home">
+
+<!-- Navigation Bar -->
+<nav>
+  <div class="logo">
+    <a href="{{ url_for('home') }}">
+    </a>
+  </div>
+  <div class="nav-links">
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+    <a href="{{ url_for('Mess') }}">Mess Menu</a>
+    <a href="{{ url_for('kfc_canteen') }}">KFC Canteen</a>
+    <a href="{{ url_for('order') }}">Order</a>
+    <a href="{{ url_for('login') }}">Login</a>
+  </div>
+</nav>
+
+<!-- Header Section -->
+<header>
+  <h1>Welcome to College Canteen</h1>
+  <p>Explore menus, check weekly specials.</p>
+</header>
+
+<!-- Main Buttons -->
+<div class="container">
+  <a href="{{ url_for('Mess') }}" class="btn">🍔 View Mess Menu</a>
+  <a href="{{ url_for('kfc_canteen') }}" class="btn">🥗 View KFC Canteen Menu</a>
+</div>
+
+</body>
+</html>
